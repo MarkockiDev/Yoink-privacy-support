@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yoink</title>
+<style>
+  :root {
+    --ink: #14181f;
+    --ink-soft: #3d444f;
+    --paper: #fbfbf9;
+    --line: #e4e2db;
+    --accent: #2f6f5e;
+    --accent-soft: #eaf2ef;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    font-family: ui-sans-serif, -apple-system, "SF Pro Text", "Segoe UI", system-ui, sans-serif;
+    background: var(--paper); color: var(--ink);
+    line-height: 1.7; font-size: 18px; letter-spacing: 0.005em;
+    -webkit-font-smoothing: antialiased;
+    min-height: 100vh; display: flex; align-items: center;
+  }
+  .wrap { max-width: 560px; margin: 0 auto; padding: 72px 28px; }
+  .eyebrow {
+    display: inline-block; font-size: 13px; font-weight: 600;
+    letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent);
+    background: var(--accent-soft); padding: 6px 12px; border-radius: 6px; margin-bottom: 24px;
+  }
+  h1 {
+    font-family: ui-serif, "New York", Georgia, "Times New Roman", serif;
+    font-size: 48px; line-height: 1.1; font-weight: 600;
+    letter-spacing: -0.02em; margin-bottom: 16px;
+  }
+  .tagline { font-size: 22px; color: var(--ink-soft); margin-bottom: 40px; }
+  p { color: var(--ink-soft); margin-bottom: 20px; }
+  .links { display: flex; flex-direction: column; gap: 14px; margin-top: 40px; }
+  .row {
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 18px 22px; background: #fff; border: 1px solid var(--line);
+    border-radius: 10px; text-decoration: none; color: var(--ink);
+    font-weight: 500; transition: border-color 0.15s ease;
+  }
+  .row:hover { border-color: var(--accent); }
+  .row:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+  .row .arrow { color: var(--accent); font-weight: 600; }
+  footer {
+    margin-top: 56px; padding-top: 24px; border-top: 1px solid var(--line);
+    font-size: 14px; color: var(--ink-soft);
+  }
+  @media (max-width: 520px) {
+    body { font-size: 17px; }
+    h1 { font-size: 38px; }
+    .tagline { font-size: 19px; }
+  }
+</style>
+</head>
+<body>
+  <main class="wrap">
+    <span class="eyebrow">iPhone app</span>
+    <h1>Yoink</h1>
+    <p class="tagline">Your card, ready before the hello.</p>
+    <p>A digital business card that swaps hands in seconds — phone to phone, no accounts, no internet, no server. Everything stays on your device.</p>
+
+    <div class="links">
+      <a class="row" href="privacy.html">
+        <span>Privacy Policy</span>
+        <span class="arrow">&rarr;</span>
+      </a>
+      <a class="row" href="mailto:markockidev@icloud.com">
+        <span>Support &amp; contact</span>
+        <span class="arrow">&rarr;</span>
+      </a>
+    </div>
+
+    <footer>
+      Yoink &middot; Built by Adam in Kraków.
+    </footer>
+  </main>
+</body>
+</html>
